@@ -1,10 +1,10 @@
-import React, { DetailedHTMLProps, FC, PropsWithChildren, ReactNode } from 'react';
-import clsx from 'clsx';
+import clsx from "clsx";
+import React, { DetailedHTMLProps, FC, PropsWithChildren } from "react";
 
-import st from './Button.module.css';
+import st from "./Button.module.scss";
 
-type size = 's' | 'm' | 'l';
-type color = 'primary' | 'secondary' | 'transparent';
+type size = "s" | "m" | "l";
+type color = "primary" | "secondary" | "transparent";
 
 interface IButtonProps
   extends DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
@@ -14,21 +14,21 @@ interface IButtonProps
 
 export const Button: FC<PropsWithChildren<IButtonProps>> = ({
   children,
-  size = 's',
-  color = 'primary',
+  size = "s",
+  color = "primary",
   className,
   ...props
 }) => {
   return (
     <button
       {...props}
-      className={clsx('', className, {
-        [st.s]: size === 's',
-        [st.m]: size === 'm',
-        [st.l]: size === 'l',
-        [st.primary]: color === 'primary',
-        [st.secondary]: color === 'secondary',
-        [st.transparent]: color === 'transparent',
+      className={clsx("", className, {
+        [st.s]: size === "s",
+        [st.m]: size === "m",
+        [st.l]: size === "l",
+        [st.primary]: color === "primary",
+        [st.secondary]: color === "secondary",
+        [st.transparent]: color === "transparent",
       })}
     >
       {children}

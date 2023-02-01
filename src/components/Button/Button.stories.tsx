@@ -1,9 +1,9 @@
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import { Button } from './Button';
+import { Button } from "./Button";
 
 export default {
-  title: 'Button',
+  title: "Button",
   component: Button,
   // argTypes: {
   //   color: {
@@ -37,24 +37,24 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  color: 'primary',
+  color: "primary",
   children: "It's a primary!",
-  size: 's',
-  onClick: () => console.log('click'),
+  size: "s",
+  onClick: () => console.log("click"),
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  color: 'secondary',
+  color: "secondary",
   children: "It's a secondary!",
-  size: 'm',
-  onClick: () => console.log('click'),
+  size: "m",
+  onClick: () => console.log("click"),
 };
 
 export const Transparent = Template.bind({});
 Transparent.args = {
-  color: 'transparent',
+  color: "transparent",
   children: "It's transparent!",
-  size: 'l',
-  onClick: () => console.log('click'),
+  size: "l",
+  onClick: () => console.log("click"),
 };
