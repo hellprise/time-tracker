@@ -1,3 +1,8 @@
+.Button {
+  font-size: 14px;
+  border: none;
+}
+
 .s {
   padding: 6px 12px;
 }
@@ -11,8 +16,8 @@
 }
 
 .primary {
-  background-color: #007bff;
-  color: #fff;
+  color: #1c1c1c;
+  background: #0095b6;
 }
 
 .secondary {
@@ -23,4 +28,11 @@
 .transparent {
   background-color: transparent;
   color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.active {
+  color: #1c1c1c;
+  background: #fd5e53;
+  border: none;
 }
