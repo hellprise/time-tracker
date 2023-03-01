@@ -38,7 +38,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const notActive = Template.bind({});
 notActive.args = {
   isActive: false,
-  children: "It's a not Active!",
+  children: "stop",
   size: "s",
 };
 
