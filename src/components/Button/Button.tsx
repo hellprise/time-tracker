@@ -28,9 +28,9 @@ export const Button: FC<PropsWithChildren<IButtonProps>> = ({
         [st.s]: size === "s",
         [st.m]: size === "m",
         [st.l]: size === "l",
-        [st.primary]: color === "primary",
-        [st.secondary]: color === "secondary",
-        [st.transparent]: color === "transparent",
+        [st.primary]: !isActive && color === "primary",
+        [st.secondary]: !isActive && color === "secondary",
+        [st.transparent]: !isActive && color === "transparent",
         [st.active]: isActive,
       })}
     >
