@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import React, { DOMAttributes } from "react";
+import React, { DetailedHTMLProps, HTMLAttributes } from "react";
 
 import { newGuid } from "../../utils/guid";
 import { ReactComponent as Bulk } from "../assets/icons/bulk-edit.svg";
@@ -13,8 +13,7 @@ const iconTypes = new Map([
   ["Bulk", <Bulk key={newGuid()} />],
 ]);
 
-interface IIconProps extends DOMAttributes<HTMLDivElement> {
-  className?: string;
+interface IIconProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   type: IconType;
 }
 

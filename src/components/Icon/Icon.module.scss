@@ -7,5 +7,17 @@
     display: inline-block;
     width: 100%;
     height: max-content;
+
+    path {
+      transition: all 0.25s;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: #000;
+      }
+    }
   }
 }
