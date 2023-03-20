@@ -12,12 +12,12 @@
       transition: all 0.25s;
     }
   }
+}
 
-  &:hover {
-    svg {
-      path {
-        fill: #000;
-      }
+.Hover:hover {
+  svg {
+    path {
+      fill: #000;
     }
   }
 }

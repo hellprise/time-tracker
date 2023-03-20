@@ -6,10 +6,8 @@
   color: #fffafa;
   text-transform: uppercase;
   cursor: pointer;
-
   border-radius: 5px;
   outline: none;
-
   transition: 0.3s ease-in-out;
 
   &:hover {
@@ -21,6 +19,7 @@
   svg {
     display: block;
     height: 100%;
+
     path {
       fill: #fffafa;
     }
@@ -75,14 +74,14 @@
 
 .active {
   background-color: #c0392b;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%);
   border: 1px solid #c0392b;
   transition: 0.3s ease-in-out;
 
   span {
     position: relative;
 
-    &:after {
+    &::after {
       content: "";
       display: inline-block;
       position: absolute;

@@ -8,11 +8,10 @@ export default {
   argTypes: {
     type: {
       type: "string",
-      description: "Варіанти розміру кнопки",
-      defaultValue: "s",
+      description: "Вибір іконки",
       control: {
         type: "radio",
-        options: ["Bulk", "Tag"],
+        options: ["Bulk", "Tag", "Close"],
       },
     },
   },
