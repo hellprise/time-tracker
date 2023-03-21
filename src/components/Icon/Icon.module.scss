@@ -1,0 +1,23 @@
+.Icon {
+  display: inline-flex;
+  vertical-align: middle;
+  text-align: center;
+
+  svg {
+    display: inline-block;
+    width: 100%;
+    height: max-content;
+
+    path {
+      transition: all 0.25s;
+    }
+  }
+}
+
+.Hover:hover {
+  svg {
+    path {
+      fill: #000;
+    }
+  }
+}
